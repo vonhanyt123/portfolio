@@ -1,0 +1,39 @@
+@import "../../styles/grid.less";
+
+@keyframes fade {
+  from {
+    opacity: 0;
+    filter: blur(5px);
+    transition: 0.5s;
+  }
+  to {
+    opacity: 1;
+    filter: blur(0);
+  }
+}
+
+.about-me {
+  margin: 70px;
+  margin-bottom: 200px;
+  font-family: "Plus Jakarta Sans";
+
+  .title {
+    font-size: 3rem;
+    font-family: "Syne";
+  }
+
+  .center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .item {
+    width: 360px;
+    &:hover {
+      box-shadow: -30px 30px 20px rgba(0, 0, 0, 0.3);
+      transform: scale(0.9);
+      transition: 0.5s;
+    }
+  }
+}

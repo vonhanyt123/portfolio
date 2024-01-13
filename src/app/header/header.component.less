@@ -1,0 +1,19 @@
+@import "../../styles/bootstrap.less";
+@import "../../styles/color.less";
+
+.header {
+  font-family: "Plus Jakarta Sans";
+  padding: 10px 60px;
+  display: flex;
+  justify-content: space-between;
+
+  .name {
+    color: @VE_green;
+  }
+
+  .items {
+    > * {
+      cursor: pointer;
+    }
+  }
+}

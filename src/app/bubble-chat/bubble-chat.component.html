@@ -1,0 +1,381 @@
+<div class="bubble-chat flex center column">
+  <div class="flex center">
+    <img src="{{ imagePath }}/bubble-chat1.png" />
+  </div>
+  <div class="wrapper flex center column">
+    <div>
+      <div class="project-overview mt-100">
+        <div class="flex align-center">
+          <span>
+            <img
+              width="64"
+              height="32"
+              src="{{ imagePath }}/rectangle179.png"
+            />
+          </span>
+          <span class="title">Project overview</span>
+        </div>
+        <p class="mt-40">
+          Voice message in Zalo has increased significantly in recent years.
+          However, the experience of receiving voice message on Zalo has been
+          nothing but very difficult. My task is to find out users pain points
+          and design a better solution for voice receiving end.
+        </p>
+        <br />
+        <br />
+        <div class="grid">
+          <div class="g-col-12 g-col-md-4">
+            <div class="header1">TIMELINE</div>
+            <p>December 2023. Plan to release in February 2023</p>
+          </div>
+          <div class="g-col-12 g-col-md-4">
+            <div class="header1">THE TEAM</div>
+            <p>
+              1 product owner, 1 UX/UI designer, 1 UX writer and teams of
+              developers and QC
+            </p>
+          </div>
+          <div class="g-col-12 g-col-md-4">
+            <div class="header1">WHAT I DID</div>
+            <p>
+              Research, wireframe, hi-fi prototype, user testing, final product
+            </p>
+          </div>
+        </div>
+        <br />
+        <img src="{{ imagePath }}/bubble-chat2.png" />
+      </div>
+      <div class="research mt-100">
+        <div class="flex align-center">
+          <span>
+            <img
+              width="64"
+              height="32"
+              src="{{ imagePath }}/rectangle179.png"
+            />
+          </span>
+          <span class="title">Research</span>
+        </div>
+        <h2 class="mt-50">
+          Voice bubble currently lacks basic playback function, and additional
+          features are hard to find.
+        </h2>
+        <p>
+          We conducted user interviews and examine user feedback channel to find
+          out users needs and pain points related to the existing voice bubble
+          chat. There are numerous complaints from our users pertain to the
+          inconvenience of receiving voice messages.
+        </p>
+        <div class="flex center column">
+          <div class="bg-orange flex center">
+            <img src="{{ imagePath }}/emoji1.png" />
+            <span class="medium-size ml-5"
+              >“Cannot pause and resume the recording”</span
+            >
+          </div>
+          <br />
+          <div class="bg-orange flex center">
+            <img src="{{ imagePath }}/emoji2.png" />
+            <span class="medium-size ml-5"
+              >“After pressing the pause button, the recording automatically
+              resets.”</span
+            >
+          </div>
+          <br />
+          <div class="bg-orange flex center">
+            <img src="{{ imagePath }}/emoji3.png" />
+            <span class="medium-size ml-5"
+              >“I cannot grasp the progress of the recording since there is no
+              indicator”</span
+            >
+          </div>
+          <br />
+          <div class="bg-orange flex center">
+            <img src="{{ imagePath }}/emoji3.png" />
+            <span class="medium-size ml-5"
+              >“The voice transcription feature is hidden in the context menu,
+              made it difficult to see”</span
+            >
+          </div>
+        </div>
+        <h2 class="mt-70">Insights from data analysis</h2>
+        <div class="grid">
+          <div class="g-col-12 g-col-md-3">
+            <img src="{{ imagePath }}/bubble-chat3.png" />
+          </div>
+          <div class="g-col-12 g-col-md-9">
+            <h3>Voice transcription is frequently used</h3>
+            <p>
+              Users use voice transcription feature frequently<b
+                >(twice a week on average)</b
+              >
+              , but only those who receive the onboarding tooltip are aware of
+              its location and how to access it.
+            </p>
+          </div>
+        </div>
+        <div class="grid">
+          <div class="g-col-12 g-col-md-3">
+            <img src="{{ imagePath }}/bubble-chat4.png" />
+          </div>
+          <div class="g-col-12 g-col-md-9">
+            <h3>Voice is used in multitasking or emotional support</h3>
+            <p>
+              Voice messages are primarily used in two cases:
+              <b>multitasking situations</b> (such as by drivers or salespeople)
+              and in <b>close relationships</b> for quick messages or emotional
+              support.
+            </p>
+          </div>
+        </div>
+        <h2 class="mt-40">Competitor Analysis</h2>
+        <p>
+          In some countries in Asia, the Middle East, and Eastern Europe,
+          <b
+            >voice messages are preferred over text messages due to typing
+            difficulties, language barriers, and cultural behaviors</b
+          >. Apps targeting these markets provide extra features for voice
+          messaging: voice transcription, speed control, autoplay,...
+        </p>
+        <div class="flex center column">
+          <div class="grey-wrapper">
+            <h3>The gap</h3>
+            <p>
+              There are very few apps that consider accessibility when designing
+              voice bubbles: Low contrast in waveform design, text that is not
+              comfortable to read, hard to seek to desired timestamp, lack clear
+              visual cues for status,…
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="bg-black flex center column pt-100 pb-100">
+  <div class="wrapper2">
+    <div class="flex align-center">
+      <span>
+        <img width="64" height="32" src="{{ imagePath }}/rectangle178.png" />
+      </span>
+      <span class="title">Framing the problem</span>
+    </div>
+    <p class="mt-50">
+      The challenge we face is that the current design has been used for a long
+      time, and there is little data available to support our assumption.
+    </p>
+    <p>
+      To address this, we divided the audit into two phases. Phase 1 focuses on
+      essential voice bubble features based on our available data and user
+      feedbacks. Once we gather additional data to validate our assumptions,
+      we'll proceed to phase 2, which involves enhancing the voice bubble.
+    </p>
+    <p>Therefore, phase 1 will include these features:</p>
+    <div class="wrapper3">
+      <span class="large-number">1</span>
+      <span>Playback function: Play, pause, and seek</span>
+    </div>
+    <div class="wrapper3">
+      <span class="large-number">2</span>
+      <span>Voice to text conversion </span>
+    </div>
+    <img src="{{ imagePath }}/bubble-chat7.png" />
+    <h2 class="mt-40">Competitor Analysis</h2>
+    <p>
+      To determine if Zalo users have a need to send longer messages or utilize
+      advanced features such as speed control, auto play, we aim to answer the
+      following questions:
+    </p>
+    <li>Has the current UI solution helped users send longer messages?</li>
+    <br />
+    <li>
+      Has there been an increase in voice duration over the past two years?
+    </li>
+    <br />
+    <li>Do users send multiple voice messages simultaneously?</li>
+  </div>
+</div>
+<div class="bubble-chat flex center column">
+  <div class="wrapper flex center column">
+    <div class="iteration-for-phase-1 mt-100">
+      <div class="flex align-center">
+        <span>
+          <img width="64" height="32" src="{{ imagePath }}/rectangle179.png" />
+        </span>
+        <span class="title">Iteration for phase 1</span>
+      </div>
+      <h2 class="mt-40">
+        Two main criteria are identified to guide the direction of solution
+        exploration
+      </h2>
+      <div class="grid">
+        <div class="g-col-12 g-col-md-6">
+          <img src="{{ imagePath }}/bubble-chat8.png" />
+          <h3 class="header1">Prioritizing user convenience</h3>
+          <p>
+            The new design should address common issues users face when
+            receiving voice messages, especially when they are multitasking or
+            at inconvenient times.
+          </p>
+        </div>
+        <div class="g-col-12 g-col-md-6">
+          <img src="{{ imagePath }}/bubble-chat9.png" />
+          <h3 class="header1">Accessibility</h3>
+          <p>
+            Given that voice recording is also widely used by senior users, it
+            is important to design a voice message bubble that is clear and
+            well-thought-out for users of all ages.
+          </p>
+        </div>
+      </div>
+      <br />
+      <h2>Wireframes and Prototypes</h2>
+      <p class="mb-10">
+        I created wireframes and multiple versions of the voice bubble chat,
+        keeping scalability in mind. There are several factors to consider, such
+        as the
+        <b
+          >design of the waveform, the organization of button hierarchy,
+          scalability, interaction design, and accessibility.</b
+        >
+      </p>
+      <br />
+      <img src="{{ imagePath }}/bubble-chat10.png" />
+    </div>
+    <div class="final-solution mt-100">
+      <div class="flex align-center">
+        <span>
+          <img width="64" height="32" src="{{ imagePath }}/rectangle179.png" />
+        </span>
+        <span class="title">Final solution</span>
+      </div>
+      <h2 class="mt-50 blue-main">1. Basic features</h2>
+      <div class="grid center">
+        <div class="g-col-12 g-col-md-6">
+          <img src="{{ imagePath }}/bubble-chat11.png" />
+        </div>
+        <div class="g-col-12 g-col-md-6">
+          The new design includes basic playback functions like play/pause and
+          seek (drag to the desired timestamp)
+        </div>
+      </div>
+      <br />
+      <br />
+      <div class="grid center">
+        <div class="g-col-12 g-col-md-6">
+          <p>
+            To improve waveform navigation, I added a darker handle. Users can
+            touch the handle and lock the action with haptic touch to seek,
+            anywhere in the finger’s reach.
+          </p>
+          <p>
+            The original position before seeking is also marked with the haptic
+            touch in case user want to go back.
+          </p>
+        </div>
+        <div class="g-col-12 g-col-md-6">
+          <div class="bg-grey flex center pt-50 pb-40">
+            <img src="{{ imagePath }}/bubble-chat12.png" />
+          </div>
+        </div>
+      </div>
+      <br />
+      <br />
+      <div class="grid center">
+        <div class="g-col-12 g-col-md-6">
+          <div class="bg-grey pl-40">
+            <img src="{{ imagePath }}/bubble-chat2.gif" />
+          </div>
+        </div>
+        <div class="g-col-12 g-col-md-6">
+          <p>
+            When a user wants to navigate to a specific point in the timeline,
+            other elements can be hidden temporarily.
+          </p>
+          <p>
+            The waveform is then expanded to its full width to assist the user
+            in accurately dragging to the desired point.
+          </p>
+        </div>
+      </div>
+      <h2 class="blue-main mt-50 mb-10">2. Voice to text</h2>
+      <p>
+        Text transcription (voice-to-text) is placed directly in the chat bubble
+        for three reasons:
+      </p>
+      <ul>
+        <li>
+          Our data shows that users frequently use this feature, especially
+          during inconvenient times.
+        </li>
+        <li>
+          It is a feature that our business wants to widely promote its AI
+          application.
+        </li>
+        <li>
+          The transcribed text is converted directly within the chat bubble.
+        </li>
+      </ul>
+      <br />
+      <img src="{{ imagePath }}/bubble-chat13.png" />
+      <p>
+        Since voice transcription is only used when users cannot conveniently
+        listen to the conversation, we have decided not to automatically convert
+        voice bubbles and users can collapse text content when needed. This
+        decision also helps maintain the privacy characteristic of a voice
+        message.
+      </p>
+      <h2 class="blue-main mt-50 mb-10">3. Scalability</h2>
+      <p>
+        Including all add-on features in the bubble chat is not recommended as
+        it increases users' cognitive load and the available space within the
+        bubbles is limited. We propose two possible solutions:
+      </p>
+      <ul>
+        <li>
+          <b>Option 1: </b>Redesign the context menu to incorporate additional
+          voice features.
+        </li>
+        <li>
+          <b>Option 2: </b> Integrate a media player within the conversation
+          screen.
+        </li>
+      </ul>
+      <h2 class="mt-30">
+        Using a media player is preferred for settings that influence all voice
+        bubbles like speed and in-ear mode.
+      </h2>
+      <p>
+        <b class="blue-main"
+          >Users tend to send multiple voice messages at once.</b
+        >Therefore, advanced features that has influence on all of the bubble
+        chat in the conversation should be placed in a media player for better
+        control, rather than incorporating these features into each voice
+        bubble.
+      </p>
+      <img src="{{ imagePath }}/bubble-chat14.png" />
+      <br />
+      <br />
+      <p>
+        We then planned out a "full" version of the voice bubble for the
+        receiving end to ensure the stability of the bubble layout in case of
+        future improvements.
+      </p>
+      <ul>
+        <li>
+          <b>1. Basic settins:</b> This zone includes the basic features that
+          are commonly used the most. It also includes any feature that can only
+          be interacted with inside the bubble chat.
+        </li>
+        <li>
+          <b>Global settings </b> (Media player): This zone includes additional
+          features that influences all voice chat
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<app-see-next-project
+  content="Enhancing chat experience with reactions"
+  subContent="UI design/2022"
+></app-see-next-project>
