@@ -1,0 +1,11 @@
+{
+  "routes": [
+    "/about-me",
+    "/bubble-chat",
+    "/florist",
+    "/home",
+    "/projects",
+    "/regreen",
+    "/zalo-connect"
+  ]
+}
